@@ -1,8 +1,8 @@
 from com_func.confread import config
 from com_func.re_replace import params_get
 from com_func.excel import ExcelOperate
+from com_func.handle_sign import HandleSign
 import requests
-
 
 def com_request(cls, api, **kwargs):
     '''通用请求方式'''
@@ -14,13 +14,18 @@ def com_request(cls, api, **kwargs):
     setattr(cls, "params", params)
     method = config.get("METHOD", api + "_method")
 
-    # -------------------请求头----------------------------
+    # -------------------请求头v2_v3----------------------------
     if method == "get":
         headers = eval(config.get("HEADERS", "headers"))
     else:
-        headers = eval(config.get("HEADERS", "headers_v2"))
+        # headers = eval(config.get("HEADERS", "headers_v2"))  # v2
+        headers = eval(config.get("HEADERS", "headers_v3"))  # v3
     if "token" in kwargs.keys():
-        headers["Authorization"] = kwargs["token"]
+        headers["Authorization"] = kwargs["token"]  # v2
+        cryto_info = HandleSign.generate_sign(kwargs["token"].split(" ")[1])
+        params["timestamp"] = cryto_info["timestamp"]  # v3
+        params["sign"] = cryto_info["sign"]  # v3
+
 
     # -------------------请求响应----------------------------
     respone = requests.request(method, api_url, json=params, headers=headers)  # 请求

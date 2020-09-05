@@ -1,18 +1,18 @@
-2020-09-05 01:33:54,180 - [test_case.py-->line:178] - INFO: 用例--登录成功--执行成功
-2020-09-05 01:33:54,390 - [test_case.py-->line:178] - INFO: 用例--登录失败_未注册的账号--执行成功
-2020-09-05 01:33:54,555 - [test_case.py-->line:178] - INFO: 用例--登录失败_错误的密码--执行成功
-2020-09-05 01:33:54,710 - [test_case.py-->line:178] - INFO: 用例--登录失败_多余的参数--执行成功
-2020-09-05 01:33:54,844 - [test_case.py-->line:178] - INFO: 用例--登录失败_账号为空--执行成功
-2020-09-05 01:33:54,986 - [test_case.py-->line:178] - INFO: 用例--登录失败_密码--执行成功
-2020-09-05 01:33:55,724 - [test_case.py-->line:104] - INFO: 用例--充值成功_0--执行成功
-2020-09-05 01:33:56,004 - [test_case.py-->line:104] - INFO: 用例--充值成功_0.01--执行成功
-2020-09-05 01:33:56,287 - [test_case.py-->line:104] - INFO: 用例--充值成功_499999.99--执行成功
-2020-09-05 01:33:56,577 - [test_case.py-->line:104] - INFO: 用例--充值成功_500000--执行成功
-2020-09-05 01:33:56,717 - [test_case.py-->line:100] - ERROR: 用例--充值失败_小于0--执行失败
+2020-09-05 10:48:10,600 - [test_case.py-->line:178] - INFO: 用例--登录成功--执行成功
+2020-09-05 10:48:10,855 - [test_case.py-->line:178] - INFO: 用例--登录失败_未注册的账号--执行成功
+2020-09-05 10:48:11,010 - [test_case.py-->line:178] - INFO: 用例--登录失败_错误的密码--执行成功
+2020-09-05 10:48:11,260 - [test_case.py-->line:178] - INFO: 用例--登录失败_多余的参数--执行成功
+2020-09-05 10:48:11,372 - [test_case.py-->line:178] - INFO: 用例--登录失败_账号为空--执行成功
+2020-09-05 10:48:11,520 - [test_case.py-->line:178] - INFO: 用例--登录失败_密码--执行成功
+2020-09-05 10:48:12,348 - [test_case.py-->line:104] - INFO: 用例--充值成功_0--执行成功
+2020-09-05 10:48:12,645 - [test_case.py-->line:104] - INFO: 用例--充值成功_0.01--执行成功
+2020-09-05 10:48:12,970 - [test_case.py-->line:104] - INFO: 用例--充值成功_499999.99--执行成功
+2020-09-05 10:48:13,325 - [test_case.py-->line:104] - INFO: 用例--充值成功_500000--执行成功
+2020-09-05 10:48:13,474 - [test_case.py-->line:100] - ERROR: 用例--充值失败_小于0--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 98, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 98, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -26,11 +26,11 @@ AssertionError: '余额必须大于0并且小于或者等于500000' != '金额�
 + 金额必须大于0并且小于或者等于500000
 ? ^
 
-2020-09-05 01:33:56,865 - [test_case.py-->line:100] - ERROR: 用例--充值失败_大于50--执行失败
+2020-09-05 10:48:13,660 - [test_case.py-->line:100] - ERROR: 用例--充值失败_大于50--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 98, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 98, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -44,11 +44,11 @@ AssertionError: '余额必须大于0并且小于或者等于500000' != '金额�
 + 金额必须大于0并且小于或者等于500000
 ? ^
 
-2020-09-05 01:33:57,017 - [test_case.py-->line:100] - ERROR: 用例--充值失败_精度小于小数点后两位--执行失败
+2020-09-05 10:48:13,821 - [test_case.py-->line:100] - ERROR: 用例--充值失败_精度小于小数点后两位--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 98, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 98, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -62,13 +62,13 @@ AssertionError: '余额小数超过两位' != '金额小数超过两位'
 + 金额小数超过两位
 ? ^
 
-2020-09-05 01:33:57,231 - [test_case.py-->line:104] - INFO: 用例--充值失败_非登录账户id--执行成功
-2020-09-05 01:33:57,348 - [test_case.py-->line:104] - INFO: 用例--充值失败_无登录账户id--执行成功
-2020-09-05 01:33:57,483 - [test_case.py-->line:100] - ERROR: 用例--充值失败_无充值金额--执行失败
+2020-09-05 10:48:14,074 - [test_case.py-->line:104] - INFO: 用例--充值失败_非登录账户id--执行成功
+2020-09-05 10:48:14,216 - [test_case.py-->line:104] - INFO: 用例--充值失败_无登录账户id--执行成功
+2020-09-05 10:48:14,378 - [test_case.py-->line:100] - ERROR: 用例--充值失败_无充值金额--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 98, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 98, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -80,11 +80,11 @@ AssertionError: '余额必须为数值型' != '必填参数为空'
 - 余额必须为数值型
 + 必填参数为空
 
-2020-09-05 01:33:57,632 - [test_case.py-->line:100] - ERROR: 用例--充值失败_非数字金额--执行失败
+2020-09-05 10:48:14,528 - [test_case.py-->line:100] - ERROR: 用例--充值失败_非数字金额--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 98, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 98, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -98,69 +98,69 @@ AssertionError: '余额必须为数值型' != '金额必须为数值型'
 + 金额必须为数值型
 ? ^
 
-2020-09-05 01:33:58,217 - [test_case.py-->line:141] - INFO: 用例--注册成功_未注册的11位手机号_8位数字字母密码_权限空_昵称空--执行成功
-2020-09-05 01:33:58,430 - [test_case.py-->line:141] - INFO: 用例--注册成功_未注册的11位手机号_16位数字字符密码_权限空_昵称空--执行成功
-2020-09-05 01:33:58,571 - [test_case.py-->line:141] - INFO: 用例--注册失败_已存在的手机号--执行成功
-2020-09-05 01:33:58,709 - [test_case.py-->line:141] - INFO: 用例--注册失败_已存在的手机号_不同密码--执行成功
-2020-09-05 01:33:58,824 - [test_case.py-->line:141] - INFO: 用例--注册失败_账号为空--执行成功
-2020-09-05 01:33:58,933 - [test_case.py-->line:141] - INFO: 用例--注册失败_账号9位--执行成功
-2020-09-05 01:33:59,053 - [test_case.py-->line:141] - INFO: 用例--注册失败_账号12位--执行成功
-2020-09-05 01:33:59,166 - [test_case.py-->line:141] - INFO: 用例--注册失败_手机号带字母--执行成功
-2020-09-05 01:33:59,283 - [test_case.py-->line:141] - INFO: 用例--注册失败_手机号带中文--执行成功
-2020-09-05 01:33:59,393 - [test_case.py-->line:141] - INFO: 用例--注册失败_手机号带字符--执行成功
-2020-09-05 01:33:59,602 - [test_case.py-->line:141] - INFO: 用例--注册失败_7位密码--执行成功
-2020-09-05 01:33:59,813 - [test_case.py-->line:141] - INFO: 用例--注册失败_密码为空--执行成功
-2020-09-05 01:34:00,024 - [test_case.py-->line:141] - INFO: 用例--注册失败_17位密码--执行成功
-2020-09-05 01:34:00,231 - [test_case.py-->line:141] - INFO: 用例--注册成功_权限0--执行成功
-2020-09-05 01:34:00,443 - [test_case.py-->line:141] - INFO: 用例--注册成功_权限1--执行成功
-2020-09-05 01:34:00,643 - [test_case.py-->line:141] - INFO: 用例--注册失败_权限2--执行成功
-2020-09-05 01:34:00,852 - [test_case.py-->line:137] - ERROR: 用例--注册失败_权限字母--执行失败
+2020-09-05 10:48:15,171 - [test_case.py-->line:141] - INFO: 用例--注册成功_未注册的11位手机号_8位数字字母密码_权限空_昵称空--执行成功
+2020-09-05 10:48:15,410 - [test_case.py-->line:141] - INFO: 用例--注册成功_未注册的11位手机号_16位数字字符密码_权限空_昵称空--执行成功
+2020-09-05 10:48:15,567 - [test_case.py-->line:141] - INFO: 用例--注册失败_已存在的手机号--执行成功
+2020-09-05 10:48:15,729 - [test_case.py-->line:141] - INFO: 用例--注册失败_已存在的手机号_不同密码--执行成功
+2020-09-05 10:48:15,843 - [test_case.py-->line:141] - INFO: 用例--注册失败_账号为空--执行成功
+2020-09-05 10:48:15,981 - [test_case.py-->line:141] - INFO: 用例--注册失败_账号9位--执行成功
+2020-09-05 10:48:16,091 - [test_case.py-->line:141] - INFO: 用例--注册失败_账号12位--执行成功
+2020-09-05 10:48:16,219 - [test_case.py-->line:141] - INFO: 用例--注册失败_手机号带字母--执行成功
+2020-09-05 10:48:16,339 - [test_case.py-->line:141] - INFO: 用例--注册失败_手机号带中文--执行成功
+2020-09-05 10:48:16,447 - [test_case.py-->line:141] - INFO: 用例--注册失败_手机号带字符--执行成功
+2020-09-05 10:48:16,665 - [test_case.py-->line:141] - INFO: 用例--注册失败_7位密码--执行成功
+2020-09-05 10:48:16,906 - [test_case.py-->line:141] - INFO: 用例--注册失败_密码为空--执行成功
+2020-09-05 10:48:17,145 - [test_case.py-->line:141] - INFO: 用例--注册失败_17位密码--执行成功
+2020-09-05 10:48:17,384 - [test_case.py-->line:141] - INFO: 用例--注册成功_权限0--执行成功
+2020-09-05 10:48:17,618 - [test_case.py-->line:141] - INFO: 用例--注册成功_权限1--执行成功
+2020-09-05 10:48:17,839 - [test_case.py-->line:141] - INFO: 用例--注册失败_权限2--执行成功
+2020-09-05 10:48:18,076 - [test_case.py-->line:137] - ERROR: 用例--注册失败_权限字母--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 135, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 135, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 1004 != 2
-2020-09-05 01:34:01,077 - [test_case.py-->line:137] - ERROR: 用例--注册失败_权限中文--执行失败
+2020-09-05 10:48:18,392 - [test_case.py-->line:137] - ERROR: 用例--注册失败_权限中文--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 135, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 135, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 1004 != 2
-2020-09-05 01:34:01,302 - [test_case.py-->line:141] - INFO: 用例--注册成功_昵称1位--执行成功
-2020-09-05 01:34:01,524 - [test_case.py-->line:141] - INFO: 用例--注册成功_昵称10位--执行成功
-2020-09-05 01:34:01,725 - [test_case.py-->line:141] - INFO: 用例--注册失败_昵称11位--执行成功
-2020-09-05 01:34:01,949 - [test_case.py-->line:141] - INFO: 用例--注册成功_昵称重复--执行成功
-2020-09-05 01:34:02,648 - [test_case.py-->line:52] - INFO: 用例--提现成功_0.01--执行成功
-2020-09-05 01:34:02,926 - [test_case.py-->line:52] - INFO: 用例--提现成功_499999.99--执行成功
-2020-09-05 01:34:03,217 - [test_case.py-->line:52] - INFO: 用例--提现成功_500000--执行成功
-2020-09-05 01:34:03,370 - [test_case.py-->line:48] - ERROR: 用例--提现失败_0--执行失败
+2020-09-05 10:48:18,670 - [test_case.py-->line:141] - INFO: 用例--注册成功_昵称1位--执行成功
+2020-09-05 10:48:18,924 - [test_case.py-->line:141] - INFO: 用例--注册成功_昵称10位--执行成功
+2020-09-05 10:48:19,207 - [test_case.py-->line:141] - INFO: 用例--注册失败_昵称11位--执行成功
+2020-09-05 10:48:19,436 - [test_case.py-->line:141] - INFO: 用例--注册成功_昵称重复--执行成功
+2020-09-05 10:48:20,188 - [test_case.py-->line:52] - INFO: 用例--提现成功_0.01--执行成功
+2020-09-05 10:48:20,475 - [test_case.py-->line:52] - INFO: 用例--提现成功_499999.99--执行成功
+2020-09-05 10:48:20,763 - [test_case.py-->line:52] - INFO: 用例--提现成功_500000--执行成功
+2020-09-05 10:48:20,963 - [test_case.py-->line:48] - ERROR: 用例--提现失败_0--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:03,546 - [test_case.py-->line:52] - INFO: 用例--提现失败_500000.01--执行成功
-2020-09-05 01:34:03,699 - [test_case.py-->line:52] - INFO: 用例--提现失败_负数--执行成功
-2020-09-05 01:34:03,855 - [test_case.py-->line:48] - ERROR: 用例--提现失败_0.001--执行失败
+2020-09-05 10:48:21,170 - [test_case.py-->line:52] - INFO: 用例--提现失败_500000.01--执行成功
+2020-09-05 10:48:21,319 - [test_case.py-->line:52] - INFO: 用例--提现失败_负数--执行成功
+2020-09-05 10:48:21,493 - [test_case.py-->line:48] - ERROR: 用例--提现失败_0.001--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -174,23 +174,23 @@ AssertionError: '余额小数超过两位' != '金额小数超过两位'
 + 金额小数超过两位
 ? ^
 
-2020-09-05 01:34:04,081 - [test_case.py-->line:48] - ERROR: 用例--提现失败_非登录id--执行失败
+2020-09-05 10:48:21,785 - [test_case.py-->line:48] - ERROR: 用例--提现失败_非登录id--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 1002 != 1007
-2020-09-05 01:34:04,211 - [test_case.py-->line:52] - INFO: 用例--提现失败_id为空--执行成功
-2020-09-05 01:34:04,361 - [test_case.py-->line:48] - ERROR: 用例--提现失败_金额为空--执行失败
+2020-09-05 10:48:21,963 - [test_case.py-->line:52] - INFO: 用例--提现失败_id为空--执行成功
+2020-09-05 10:48:22,124 - [test_case.py-->line:48] - ERROR: 用例--提现失败_金额为空--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -204,106 +204,106 @@ AssertionError: '余额为空' != '金额为空'
 + 金额为空
 ? ^
 
-2020-09-05 01:34:04,507 - [test_case.py-->line:52] - INFO: 用例--提现失败_金额非整数--执行成功
-2020-09-05 01:34:04,663 - [test_case.py-->line:48] - ERROR: 用例--提现失败_id参数类型整数型--执行失败
+2020-09-05 10:48:22,291 - [test_case.py-->line:52] - INFO: 用例--提现失败_金额非整数--执行成功
+2020-09-05 10:48:22,447 - [test_case.py-->line:48] - ERROR: 用例--提现失败_id参数类型整数型--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:04,882 - [test_case.py-->line:52] - INFO: 用例--提现失败_金额大于余额--执行成功
-2020-09-05 01:34:05,524 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_1个月--执行成功
-2020-09-05 01:34:05,736 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_36个月--执行成功
-2020-09-05 01:34:05,946 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_10天--执行成功
-2020-09-05 01:34:06,156 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_45天--执行成功
-2020-09-05 01:34:06,358 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_不存在id--执行成功
-2020-09-05 01:34:06,569 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_非登录id--执行成功
-2020-09-05 01:34:06,724 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_id类型错误--执行失败
+2020-09-05 10:48:22,668 - [test_case.py-->line:52] - INFO: 用例--提现失败_金额大于余额--执行成功
+2020-09-05 10:48:23,457 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_1个月--执行成功
+2020-09-05 10:48:23,705 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_36个月--执行成功
+2020-09-05 10:48:23,948 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_10天--执行成功
+2020-09-05 10:48:24,177 - [test_case_add.py-->line:46] - INFO: 用例--新增项目成功_45天--执行成功
+2020-09-05 10:48:24,422 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_不存在id--执行成功
+2020-09-05 10:48:24,672 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_非登录id--执行成功
+2020-09-05 10:48:24,861 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_id类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:06,847 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_id空格--执行成功
-2020-09-05 01:34:06,958 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_id为空--执行成功
-2020-09-05 01:34:07,117 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_标题空格--执行成功
-2020-09-05 01:34:07,260 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_标题为空--执行成功
-2020-09-05 01:34:07,427 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_标题类型错误--执行失败
+2020-09-05 10:48:25,024 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_id空格--执行成功
+2020-09-05 10:48:25,153 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_id为空--执行成功
+2020-09-05 10:48:25,373 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_标题空格--执行成功
+2020-09-05 10:48:25,551 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_标题为空--执行成功
+2020-09-05 10:48:25,715 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_标题类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:07,583 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款为0--执行成功
-2020-09-05 01:34:07,725 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款为负数--执行成功
-2020-09-05 01:34:07,869 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款不为整数--执行成功
-2020-09-05 01:34:08,012 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款不为100的整数倍--执行成功
-2020-09-05 01:34:08,165 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_借款类型错误--执行失败
+2020-09-05 10:48:25,857 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款为0--执行成功
+2020-09-05 10:48:26,012 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款为负数--执行成功
+2020-09-05 10:48:26,167 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款不为整数--执行成功
+2020-09-05 10:48:26,321 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款不为100的整数倍--执行成功
+2020-09-05 10:48:26,515 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_借款类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:08,311 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款为空--执行成功
-2020-09-05 01:34:08,460 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_年化为0--执行成功
-2020-09-05 01:34:08,609 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_年化负数--执行成功
-2020-09-05 01:34:08,762 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_年化参数类型错误--执行失败
+2020-09-05 10:48:26,733 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款为空--执行成功
+2020-09-05 10:48:26,897 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_年化为0--执行成功
+2020-09-05 10:48:27,081 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_年化负数--执行成功
+2020-09-05 10:48:27,249 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_年化参数类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:08,909 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_年化参数为空--执行成功
-2020-09-05 01:34:09,058 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为0--执行成功
-2020-09-05 01:34:09,199 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为小数--执行成功
-2020-09-05 01:34:09,351 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_借款类型错误--执行失败
+2020-09-05 10:48:27,466 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_年化参数为空--执行成功
+2020-09-05 10:48:27,645 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为0--执行成功
+2020-09-05 10:48:27,805 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为小数--执行成功
+2020-09-05 10:48:28,014 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_借款类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:09,512 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款参数为空--执行成功
-2020-09-05 01:34:09,655 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为0天--执行成功
-2020-09-05 01:34:09,806 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为9天--执行成功
-2020-09-05 01:34:09,952 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为46天--执行成功
-2020-09-05 01:34:10,088 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限参数为空--执行成功
-2020-09-05 01:34:10,244 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限单位为0--执行成功
-2020-09-05 01:34:10,395 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限单位为3--执行成功
-2020-09-05 01:34:10,545 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_借款期限单位类型错误--执行失败
+2020-09-05 10:48:28,247 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款参数为空--执行成功
+2020-09-05 10:48:28,423 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为0天--执行成功
+2020-09-05 10:48:28,604 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为9天--执行成功
+2020-09-05 10:48:28,764 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限为46天--执行成功
+2020-09-05 10:48:28,914 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限参数为空--执行成功
+2020-09-05 10:48:29,142 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限单位为0--执行成功
+2020-09-05 10:48:29,314 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限单位为3--执行成功
+2020-09-05 10:48:29,504 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_借款期限单位类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -315,55 +315,55 @@ AssertionError: '借款期限单位为月的项目,期限范围为1到36个月(�
 - 借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)
 + 数值参数格式不正确
 
-2020-09-05 01:34:10,701 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限单位为空--执行成功
-2020-09-05 01:34:10,850 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_竞标天数为0--执行成功
-2020-09-05 01:34:10,994 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_竞标天数为11--执行成功
-2020-09-05 01:34:11,149 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_竞标天数类型错误--执行失败
+2020-09-05 10:48:29,689 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_借款期限单位为空--执行成功
+2020-09-05 10:48:29,851 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_竞标天数为0--执行成功
+2020-09-05 10:48:30,034 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_竞标天数为11--执行成功
+2020-09-05 10:48:30,258 - [test_case_add.py-->line:42] - ERROR: 用例--新增项目失败_竞标天数类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 35, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:11,296 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_竞标天数参数为空--执行成功
-2020-09-05 01:34:12,158 - [test_case_add.py-->line:117] - INFO: 用例--审核成功_项目通过--执行成功
-2020-09-05 01:34:12,485 - [test_case_add.py-->line:117] - INFO: 用例--审核成功_项目不通过--执行成功
-2020-09-05 01:34:12,746 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_项目已审核--执行成功
-2020-09-05 01:34:13,011 - [test_case_add.py-->line:113] - ERROR: 用例--审核失败_项目id类型错误--执行失败
+2020-09-05 10:48:30,462 - [test_case_add.py-->line:46] - INFO: 用例--新增项目失败_竞标天数参数为空--执行成功
+2020-09-05 10:48:31,463 - [test_case_add.py-->line:117] - INFO: 用例--审核成功_项目通过--执行成功
+2020-09-05 10:48:31,810 - [test_case_add.py-->line:117] - INFO: 用例--审核成功_项目不通过--执行成功
+2020-09-05 10:48:32,078 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_项目已审核--执行成功
+2020-09-05 10:48:32,339 - [test_case_add.py-->line:113] - ERROR: 用例--审核失败_项目id类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_add.py", line 101, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_add.py", line 101, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:13,249 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_项目id不存在--执行成功
-2020-09-05 01:34:13,518 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_审核状态类型错误--执行成功
-2020-09-05 01:34:13,783 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_审核状态类不存在--执行成功
-2020-09-05 01:34:14,677 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资100成功--执行成功
-2020-09-05 01:34:14,852 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_用户id参数类型错误--执行失败
+2020-09-05 10:48:32,630 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_项目id不存在--执行成功
+2020-09-05 10:48:32,911 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_审核状态类型错误--执行成功
+2020-09-05 10:48:33,194 - [test_case_add.py-->line:117] - INFO: 用例--审核失败_审核状态类不存在--执行成功
+2020-09-05 10:48:34,119 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资100成功--执行成功
+2020-09-05 10:48:34,292 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_用户id参数类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:15,019 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_用户id参数为空--执行失败
+2020-09-05 10:48:34,477 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_用户id参数为空--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 43, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -375,25 +375,25 @@ AssertionError: '会员id为空' != '项目id为空'
 - 会员id为空
 + 项目id为空
 
-2020-09-05 01:34:15,231 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_非登录用户id--执行成功
-2020-09-05 01:34:15,451 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_非竞标项目--执行成功
-2020-09-05 01:34:15,596 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_竞标项目参数为空--执行失败
+2020-09-05 10:48:34,764 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_非登录用户id--执行成功
+2020-09-05 10:48:35,016 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_非竞标项目--执行成功
+2020-09-05 10:48:35,166 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_竞标项目参数为空--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 1 != 2
-2020-09-05 01:34:15,744 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额非100整数--执行成功
-2020-09-05 01:34:15,891 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额超出最大金额--执行失败
+2020-09-05 10:48:35,342 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额非100整数--执行成功
+2020-09-05 10:48:35,530 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额超出最大金额--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 36, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 41, in com_assertEqual
     self.assertEqual(respone["msg"], expect["msg"].split(",")[0])  # msg
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -405,61 +405,61 @@ AssertionError: '该标可投金额不足,可投金额：9.99998E7' != '该标�
 - 该标可投金额不足,可投金额：9.99998E7
 + 该标可投金额不足
 
-2020-09-05 01:34:16,054 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额负数--执行成功
-2020-09-05 01:34:16,206 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额为0--执行成功
-2020-09-05 01:34:16,370 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额参数错误--执行失败
+2020-09-05 10:48:35,748 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额负数--执行成功
+2020-09-05 10:48:35,927 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额为0--执行成功
+2020-09-05 10:48:36,142 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额参数错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:16,532 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额参数为空--执行失败
+2020-09-05 10:48:36,341 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额参数为空--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 45, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 1 != 2
-2020-09-05 01:34:17,020 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资最大值成功--执行成功
-2020-09-05 01:34:17,581 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
-2020-09-05 01:34:17,702 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
-2020-09-05 01:34:17,813 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
-2020-09-05 01:34:17,928 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_索引参数类型错误--执行失败
+2020-09-05 10:48:36,869 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资最大值成功--执行成功
+2020-09-05 10:48:37,471 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
+2020-09-05 10:48:37,598 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
+2020-09-05 10:48:37,724 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
+2020-09-05 10:48:37,853 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_索引参数类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 96, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:18,052 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_每页大小类型错误--执行失败
+2020-09-05 10:48:38,006 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_每页大小类型错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_invest.py", line 96, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:18,586 - [test_case_update.py-->line:87] - INFO: 用例--获取信息成功--执行成功
-2020-09-05 01:34:19,220 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称成功_1位--执行成功
-2020-09-05 01:34:19,419 - [test_case_update.py-->line:42] - ERROR: 用例--更新昵称成功_10位--执行失败
+2020-09-05 10:48:38,655 - [test_case_update.py-->line:87] - INFO: 用例--获取信息成功--执行成功
+2020-09-05 10:48:39,384 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称成功_1位--执行成功
+2020-09-05 10:48:39,631 - [test_case_update.py-->line:42] - ERROR: 用例--更新昵称成功_10位--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_update.py", line 39, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_update.py", line 39, in test_case
     self.assertEqual(res["reg_name"], self.params["reg_name"])  # 校验更新后的昵称与预期
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
@@ -471,28 +471,28 @@ AssertionError: '孙' != '孙孙孙孙孙孙孙孙孙孙'
 - 孙
 + 孙孙孙孙孙孙孙孙孙孙
 
-2020-09-05 01:34:19,574 - [test_case_update.py-->line:42] - ERROR: 用例--更新昵称失败_id 非整数型--执行失败
+2020-09-05 10:48:39,872 - [test_case_update.py-->line:42] - ERROR: 用例--更新昵称失败_id 非整数型--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_update.py", line 40, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_update.py", line 40, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 2
-2020-09-05 01:34:19,695 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_id 非整数型--执行成功
-2020-09-05 01:34:19,900 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_id 非登录--执行成功
-2020-09-05 01:34:20,027 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_id 为空--执行成功
-2020-09-05 01:34:20,208 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_昵称11位--执行成功
-2020-09-05 01:34:20,347 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_昵称为空--执行成功
-2020-09-05 01:34:20,490 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_昵称为空--执行成功
-2020-09-05 01:34:20,649 - [test_case_update.py-->line:42] - ERROR: 用例--更新昵称失败_昵称非字符串--执行失败
+2020-09-05 10:48:40,066 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_id 非整数型--执行成功
+2020-09-05 10:48:40,287 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_id 非登录--执行成功
+2020-09-05 10:48:40,405 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_id 为空--执行成功
+2020-09-05 10:48:40,590 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_昵称11位--执行成功
+2020-09-05 10:48:40,745 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_昵称为空--执行成功
+2020-09-05 10:48:40,905 - [test_case_update.py-->line:46] - INFO: 用例--更新昵称失败_昵称为空--执行成功
+2020-09-05 10:48:41,060 - [test_case_update.py-->line:42] - ERROR: 用例--更新昵称失败_昵称非字符串--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_update.py", line 40, in test_case
+  File "c:\工具资料\GitHub\python_api_autotest\testcase\test_case_update.py", line 40, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_autotest\com_func\com_request_func.py", line 39, in com_assertEqual
     self.assertEqual(respone["code"], expect["code"])  # 判断code
   File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
     assertion_func(first, second, msg=msg)
