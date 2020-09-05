@@ -1,0 +1,55 @@
+2020-09-05 01:21:41,583 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表成功--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-09-05 01:21:41,725 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表成功--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-09-05 01:21:41,859 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表成功--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 0
+2020-09-05 01:21:41,971 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_索引参数类型错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-09-05 01:21:42,090 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_每页大小类型错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2

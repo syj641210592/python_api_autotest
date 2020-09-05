@@ -1,0 +1,108 @@
+2020-09-05 01:27:01,174 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资100成功--执行成功
+2020-09-05 01:27:01,335 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_用户id参数类型错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-09-05 01:27:01,484 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_用户id参数为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 38, in com_assertEqual
+    self.assertEqual(respone["msg"], expect["msg"])  # msg
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '项目id为空'
+- 会员id为空
++ 项目id为空
+
+2020-09-05 01:27:01,706 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_非登录用户id--执行成功
+2020-09-05 01:27:01,927 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_非竞标项目--执行成功
+2020-09-05 01:27:02,067 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_竞标项目参数为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-09-05 01:27:02,227 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额非100整数--执行成功
+2020-09-05 01:27:02,384 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额超出最大金额--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 36, in com_assertEqual
+    self.assertEqual(respone["msg"], expect["msg"].split(",")[0])  # msg
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '该标可投金额不足,可投金额：9.99998E7' != '该标可投金额不足'
+- 该标可投金额不足,可投金额：9.99998E7
++ 该标可投金额不足
+
+2020-09-05 01:27:02,540 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额负数--执行成功
+2020-09-05 01:27:02,682 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资失败_投资金额为0--执行成功
+2020-09-05 01:27:02,844 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-09-05 01:27:03,009 - [test_case_invest.py-->line:57] - ERROR: 用例--新增投资失败_投资金额参数为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 45, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1 != 2
+2020-09-05 01:27:03,523 - [test_case_invest.py-->line:61] - INFO: 用例--新增投资最大值成功--执行成功
+2020-09-05 01:27:04,130 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
+2020-09-05 01:27:04,249 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
+2020-09-05 01:27:04,380 - [test_case_invest.py-->line:102] - INFO: 用例--新增获取项目列表成功--执行成功
+2020-09-05 01:27:04,504 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_索引参数类型错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2020-09-05 01:27:04,636 - [test_case_invest.py-->line:98] - ERROR: 用例--新增获取项目列表失败_每页大小类型错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\testcase\test_case_invest.py", line 96, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\Python\py_vs\22_python_投资项目\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone["code"], expect["code"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
