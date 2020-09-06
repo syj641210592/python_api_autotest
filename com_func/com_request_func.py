@@ -18,13 +18,13 @@ def com_request(cls, api, **kwargs):
     if method == "get":
         headers = eval(config.get("HEADERS", "headers"))
     else:
-        # headers = eval(config.get("HEADERS", "headers_v2"))  # v2
-        headers = eval(config.get("HEADERS", "headers_v3"))  # v3
+        headers = eval(config.get("HEADERS", "headers_v2"))  # v2
+        # headers = eval(config.get("HEADERS", "headers_v3"))  # v3
     if "token" in kwargs.keys():
         headers["Authorization"] = kwargs["token"]  # v2
-        cryto_info = HandleSign.generate_sign(kwargs["token"].split(" ")[1])
-        params["timestamp"] = cryto_info["timestamp"]  # v3
-        params["sign"] = cryto_info["sign"]  # v3
+        # cryto_info = HandleSign.generate_sign(kwargs["token"].split(" ")[1])
+        # params["timestamp"] = cryto_info["timestamp"]  # v3
+        # params["sign"] = cryto_info["sign"]  # v3
 
 
     # -------------------请求响应----------------------------
