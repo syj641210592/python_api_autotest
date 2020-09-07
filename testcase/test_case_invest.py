@@ -72,7 +72,7 @@ class TestInvest(unittest.TestCase):
 
 @ddt.ddt
 class TestLoans(unittest.TestCase):
-    '''投资项目'''
+    '''获取项目'''
     Worksheet_name = "loans"
     excel, data_list = com_excel_read(Worksheet_name)
 
